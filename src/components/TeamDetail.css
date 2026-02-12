@@ -1,0 +1,214 @@
+.team-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 0.4s ease;
+}
+
+.team-detail-back {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(200, 170, 110, 0.2);
+    color: #c8aa6e;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.team-detail-back:hover {
+    background: rgba(200, 170, 110, 0.15);
+    transform: translateX(-4px);
+}
+
+/* Header del equipo */
+.team-detail-header {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(200, 170, 110, 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.team-detail-badge-wrapper {
+    flex-shrink: 0;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.team-detail-badge {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.team-detail-info {
+    flex: 1;
+}
+
+.team-detail-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin: 0 0 0.25rem 0;
+}
+
+.team-detail-alt {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 1rem 0;
+    font-style: italic;
+}
+
+.team-detail-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+}
+
+.team-detail-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+}
+
+.meta-icon {
+    font-size: 1.2rem;
+}
+
+.meta-label {
+    display: block;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.meta-value {
+    display: block;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+/* Descripción */
+.team-detail-description {
+    margin-top: 1.5rem;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(200, 170, 110, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.team-detail-description h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: #c8aa6e;
+    margin: 0 0 0.75rem 0;
+}
+
+.team-detail-description p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Jersey */
+.team-detail-jersey {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.team-detail-jersey h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: #c8aa6e;
+    margin: 0 0 1rem 0;
+}
+
+.team-detail-jersey-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Partidos */
+.team-detail-matches {
+    margin-top: 1.5rem;
+}
+
+.team-detail-matches h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: #c8aa6e;
+    margin: 0 0 1rem 0;
+}
+
+.matches-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.no-matches {
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-detail-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .team-detail-badge-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-detail-badge {
+        width: 70px;
+        height: 70px;
+    }
+
+    .team-detail-name {
+        font-size: 1.5rem;
+    }
+
+    .team-detail-meta {
+        grid-template-columns: 1fr;
+    }
+}

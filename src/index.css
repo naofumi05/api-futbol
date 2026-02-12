@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* ===== CSS Reset & Global Tokens ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Paleta de colores - tema fútbol oscuro */
+  --bg-primary: #0a110b;
+  --bg-secondary: #0d1b0e;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --text-primary: #f0f0f0;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-muted: rgba(255, 255, 255, 0.35);
+  --accent-gold: #c8aa6e;
+  --accent-gold-light: #f0d890;
+  --border-subtle: rgba(200, 170, 110, 0.15);
+
+  /* Tipografía */
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+
+  /* Espaciado */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(13, 27, 14, 0.8) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(20, 40, 20, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(15, 30, 16, 0.4) 0%, transparent 50%),
+    var(--bg-primary);
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-gold);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--accent-gold-light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 170, 110, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 170, 110, 0.5);
+}
+
+/* Selección de texto */
+::selection {
+  background: rgba(200, 170, 110, 0.3);
+  color: #f0f0f0;
+}

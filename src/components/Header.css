@@ -1,0 +1,67 @@
+.header {
+  background: linear-gradient(135deg, #0d1b0e 0%, #1a3a1c 50%, #0d1b0e 100%);
+  border-bottom: 2px solid rgba(200, 170, 110, 0.3);
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 8px rgba(200, 170, 110, 0.6));
+  animation: bounce 2s ease infinite;
+}
+
+.header-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c8aa6e, #f0d890);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-style: italic;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1rem;
+  }
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-title {
+    font-size: 1.4rem;
+  }
+}
