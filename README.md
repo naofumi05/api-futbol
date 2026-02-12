@@ -63,11 +63,4 @@ El proyecto sigue una arquitectura de capas clara:
 
 ---
 
-## 📖 Documentación para Desarrolladores
 
-Para una explicación detallada de la lógica interna, algoritmos de búsqueda incremental y cómo defender técnicamente el proyecto, consulta el archivo:
-👉 [**EXPLICACION_PROYECTO.md**](./EXPLICACION_PROYECTO.md)
-
----
-
-Desarrollado con ❤️ para amantes del fútbol y la tecnología.
